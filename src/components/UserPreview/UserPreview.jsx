@@ -13,7 +13,7 @@ function UserPreview({ user }) {
             <div className={style.userRole}>Роль: {user.type}</div>
             <div className={style.userOpenBtn}>
                 <div className={style.userOpenBtnLayout}>
-                    <Link to={`/user/${user.id}`} state={{ user }}>
+                    <Link to={`/skyeng-test/user/${user.id}`} state={{ user }}>
                         <Button type='primary' title='Посмотреть' />
                     </Link>
                 </div>

@@ -4,6 +4,7 @@ import Main from "./components/Main/Main";
 import User from "./components/User/User";
 import { Context } from "./context/context";
 import { Route, Routes } from "react-router-dom";
+import NotFound from "./pages/NotFound/NotFound";
 
 function App() {
 
@@ -16,8 +17,9 @@ function App() {
     <Context.Provider value={[users, setUsers]}>
       <Layout>
         <Routes>
-          <Route path="/" element={<Main />} />
-          <Route path="/user/:id" element={<User />} />
+          <Route path="/skyeng-test/"  element={<Main />} />
+          <Route path="/skyeng-test/user/:id"  element={<User />} />
+          <Route path="*"  element={<NotFound />} />
         </Routes>
       </Layout>
     </Context.Provider>

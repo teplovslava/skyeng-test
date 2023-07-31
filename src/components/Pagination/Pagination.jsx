@@ -11,6 +11,10 @@ function Pagination({ count = 30, page, setPage }) {
 
   function changePage(e) {
     setPage(prev => prev = e.selected + 1)
+    window.scrollTo({
+      top: 0,
+      behavior: 'smooth',
+    })
   }
 
 
