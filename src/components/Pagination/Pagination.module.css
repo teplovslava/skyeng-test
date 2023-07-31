@@ -1,0 +1,1 @@
+.overlay{display:flex;flex-direction:row;align-items:center;justify-content:center;gap:2rem}.overlay li a{min-width:2rem;height:2rem;display:flex;flex-direction:row;align-items:center;justify-content:center;cursor:pointer;border-radius:.8rem;padding:.3rem;font-size:1.4rem}.activeStep a{background-color:#1ebbfe;color:#fff}
